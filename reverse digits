@@ -1,0 +1,49 @@
+
+
+import java.util.Scanner;
+
+public class reverseDigit {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner input = new Scanner(System.in);
+		// ask user to enter a year
+        System.out.print("enter an integer: ");
+        //create variable to get the year
+        int number = input.nextInt();
+       
+        
+      
+      int a=  reverseDigits(number);
+        
+      System.out.println(number+ " reverse is "+a);
+		
+	}
+	
+	public static int reverseDigits(int x) {
+		
+		int keep=x;
+		int extract;
+		String s="";
+
+		while(true) {
+			extract = x%10;
+		
+		 s +=""+extract;
+		
+		
+		x-=extract;
+		x/=10;
+		if(x==0)
+			break;
+		
+		
+	}
+		int b= Integer.parseInt(s);
+		return b;
+		//System.out.println(keep+ " reverse is "+s);
+		
+	}
+
+}
